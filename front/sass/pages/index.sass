@@ -1,0 +1,289 @@
+$white: #fff
+$blue: #020529
+$yellow: #F8E71C
+$purple: #020529
+$text: #292929
+
+$font-gilroy-bold: Gilroy-Bold, sans-serif
+$font-gilroy-bold-extra: Gilroy-Extrabold, sans-serif
+$font-gilroy-black: Gilroy-Black, sans-serif
+
+body
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  background: $blue
+  img
+    max-width: 100%
+    height: auto
+
+.position
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+
+.btn
+  width: 293px
+  padding: 28px 0 22px
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  font-family: $font-gilroy-bold-extra
+  font-size: 22px
+  letter-spacing: 0.06em
+  border: 2px solid $yellow
+  border-radius: 100px
+  color: $yellow
+  background: linear-gradient(180deg, #572F9D 0%, #2D1A51 100%)
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.2)
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.35))
+  text-transform: uppercase
+  position: relative
+  &:before
+    content: ""
+    background: linear-gradient(180deg, #7349BF 0%, #2D1A51 100%)
+    display: inline-block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    transition: opacity .3s linear
+    border-radius: 100px
+    z-index: -1
+  &:hover
+    &:before
+      opacity: 1
+
+.bao
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    background:  url("../img/monster.png") no-repeat 0 0/contain
+    width: 600px
+    height: 400px
+    transform-origin: bottom right
+    transform: scale(1.2)
+    z-index: 20
+
+  &__bg
+    background: url("../img/bg.jpg") no-repeat 0 0/cover
+    width: 75%
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    &:before
+      content: ""
+      background: linear-gradient(90deg, #020529 0%, rgba(2, 5, 41, 0) 100%)
+      height: 100%
+      width: 243px
+      position: absolute
+      left: 0
+  &__bg-bottom
+    display: none
+  &__main
+    height: 100%
+    position: relative
+    display: flex
+    justify-content: space-around
+    align-items: flex-end
+    &-wrapper
+      width: 100%
+      position: relative
+      z-index: 2
+      margin: 0 182px 0 103px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+    &-cat
+      width: 491px
+      position: absolute
+      bottom: -94px
+      left: -331px
+      z-index: 4
+      transform: scale(1.2)
+      transform-origin: bottom center
+      .mob
+        display: none
+    &-wheel
+      width: 725px
+      height: 868px
+      position: relative
+      flex-shrink: 0
+      margin-bottom: -40px
+      &-wrap
+        position: relative
+        background: $blue
+        border-radius: 50%
+        transform-origin: center
+        transform: scale(1.15)
+        top: -50px
+      &-arrow
+        background: url("../img/wheel-arrow.png") no-repeat 0 0/contain
+        width: 133px
+        height: 114px
+        top: -28px
+        bottom: auto
+        z-index: 5
+      &-btn
+        background: url("../img/wheel-btn.png") no-repeat 0 0/contain
+        width: 230px
+        height: 230px
+        z-index: 4
+        cursor: pointer
+        transform: translateY(5px)
+        display: flex
+        justify-content: center
+        align-items: center
+      &-frame
+        background: url("../img/wheel-frame.png") no-repeat 0 0/contain
+        border-radius: 50%
+        width: 725px
+        height: 729px
+        position: relative
+        z-index: 4
+        border: 10px solid #1D1033
+      &-reel
+        background: url("../img/wheel-reel.png") no-repeat 0 0/contain
+        width: 713px
+        height: 713px
+        top: 8px
+        bottom: auto
+        z-index: 3
+        image-rendering: -webkit-optimize-contrast
+      &-bottom
+        background: url("../img/wheel-bottom.png") no-repeat 0 0/contain
+        width: 471px
+        height: 218px
+        top: auto
+        bottom: -132px
+    &-descr
+      width: 620px
+      &-logo
+        background: url("../img/logo.png") no-repeat 0 0/contain
+        width: 277px
+        height: 64px
+        margin-top: 50px
+      &-title
+        margin-top: 69px
+        font-family: $font-gilroy-black
+        font-size: 110px
+        line-height: 114px
+        text-transform: uppercase
+        background: linear-gradient(180deg, #FCF16A 0%, #FAE700 12.89%, #FAE700 60.28%, #998E00 87.89%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        letter-spacing: 0.01em
+      &-subtitle
+        margin-top: 30px
+        font-family: $font-gilroy-bold
+        font-size: 34px
+        line-height: 42px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: $white
+      &-btn
+        margin-top: 45px
+  &__overlay
+    background: rgba($purple, 0.8)
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 10
+    transition: opacity .4s linear, visibility .4s linear
+  &__firstWin, &__secondWin
+    width: 680px
+    height: 500px
+    position: relative
+    background: linear-gradient(236.85deg, #7A30BF -6.33%, #38186E 42.2%, #241243 98.81%)
+    border-radius: 50px
+    &-info
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &-cat
+      background: url("../img/cat.png") no-repeat 0 0/cover
+      width: 382px
+      height: 303px
+      margin-top: -140px
+    &-title
+      margin-top: 21px
+      font-family: $font-gilroy-bold
+      font-size: 29px
+      line-height: 38px
+      color: $white
+      text-transform: uppercase
+      letter-spacing: 0.04em
+      text-align: center
+    &-sum
+      font-family: $font-gilroy-black
+      font-size: 68px
+      line-height: 81px
+      background: linear-gradient(180deg, #FCF16A 0%, #FAE700 12.89%, #FAE700 60.28%, #998E00 87.89%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      text-transform: uppercase
+      letter-spacing: 0.01em
+      margin-top: 5px
+    &-btn
+      margin-top: 38px
+
+
+@keyframes highlight
+  0%
+    box-shadow: 0 0 0 rgba(255,255,255,.5)
+  50%
+    box-shadow: 0 0 50px rgba(255,255,255,.5)
+  100%
+    box-shadow: 0 0 0 rgba(255,255,255,.5)
+
+.reel-rotation-first
+  animation: 6,5s reel-rotation-first cubic-bezier(.25,.75,.5,1.05) forwards
+
+@keyframes reel-rotation-first
+  0%
+    transform: rotate(0deg)
+  80%
+    transform: rotate(918deg)
+  90%
+    transform: rotate(909deg)
+  100%
+    transform: rotate(913deg)
+
+.reel-rotation-second
+  animation: 6,5s reel-rotation-second cubic-bezier(.25,.75,.5,1.05) forwards
+
+@keyframes reel-rotation-second
+  0%
+    transform: rotate(913deg)
+  80%
+    transform: rotate(1680deg)
+  90%
+    transform: rotate(1675deg)
+  100%
+    transform: rotate(1679deg)
+
+.hide
+  display: none
+
+.opacity-overlay
+  opacity: 0
+  visibility: hidden
