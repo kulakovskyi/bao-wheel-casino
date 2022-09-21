@@ -25,6 +25,7 @@ body
   margin: auto
 
 .btn
+  z-index: 50
   width: 293px
   padding: 28px 0 22px
   display: flex
@@ -64,6 +65,15 @@ body
   height: 100%
   overflow: hidden
   position: relative
+
+  @media screen and (min-width: 700px) and (orientation: landscape) and (min-height: 451px)
+    background: url('../img/bg.jpg') no-repeat 50% 0/cover
+  @media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait)
+    background: url('../img/tablet-top.jpg') no-repeat 50% 0/cover
+  @media screen and (max-width: 600px) and (orientation: portrait)
+    background: url("../img/bg-mob.jpg") no-repeat 50% 0/cover
+  @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+    background: url("../img/tablet-bottom.jpg") no-repeat 50% 0/cover
   &::after
     content: ''
     position: absolute

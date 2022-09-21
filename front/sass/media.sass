@@ -1,3 +1,5 @@
+
+
 @media screen and (min-height: 1300px)
   .bao
     &::after
@@ -5,13 +7,14 @@
     &__main
       &-wrapper
         margin: 0 225px 0 154px
-        max-width: 1872px !important
+        max-width: 2019px
       &-cat
-        bottom: 10px
+        bottom: 55px
 
       &-wheel
         transform: scale(1.4)
         height: 990px
+
       &-txt
         font-size: 85px
         line-height: 94px
@@ -53,11 +56,13 @@
       font-size: 30px
       padding: 35px 0 25px
 
-@media screen and (min-width: 1920px)
+@media screen and (min-width: 2200px)
   .bao
     &__main
       &-wrapper
-        max-width: 1674px
+        margin: 0 225px 0 154px
+        max-width: 2019px
+
 
 @media screen and (max-width: 1920px) and (max-height: 1050px)
   .bao
@@ -67,8 +72,16 @@
           top: 0
           transform: scale(1.05)
 
+@media screen and (max-width: 1850px)
+  .bao
+    &__main
+      &-wrapper
+        margin: 0 123px 0 103px
+
 @media screen and (max-width: 1680px)
   .bao
+    &::after
+      transform: scale(0.95)
     &__main
       &-wrapper
         margin: 0 112px 0 103px
@@ -122,12 +135,6 @@
       &-wrapper
         margin: 0 30px 0 103px
 
-@media screen and (max-width: 1540px)
-  .bao
-    &__main
-      &-wrapper
-        margin: 0 83px
-
 @media screen and (max-width: 1540px) and (max-height: 800px)
   .bao
     &__main
@@ -135,9 +142,7 @@
         transform: scale(0.77)
         margin-bottom: -135px
       &-cat
-        //width: 426px
-        //right: -127px
-        //bottom: 33px
+        bottom: -68px
     &__firstWin, &__secondWin
       height: 440px
       &-cat
@@ -145,15 +150,18 @@
         height: 260px
         margin-top: -125px
 
+@media screen and (max-width: 1440px)
+  .bao
+    &__main
+      &-wrapper
+        margin: 0 15px 0 86px
+
+
 @media screen and (max-width: 1440px) and (min-height: 800px)
   .bao
     &__main
       &-wrapper
-        margin: 0 83px 0 86px
-      &-cat
-        //width: 412px
-        //right: -83px
-        //bottom: 11px
+        margin: 0 15px 0 86px
 
 @media screen and (max-width: 1366px) and (max-height: 800px)
   .bao
@@ -161,19 +169,16 @@
       &-descr
         width: 490px
       &-wrapper
-        margin: 0 130px
-      &-cat
-        width: 423px
-        right: -128px
-        bottom: 33px
+        margin: 0 -38px 0 86px
       &-wheel
         margin-bottom: -130px
 
 @media screen and (max-width: 1366px) and (max-height: 700px)
   .bao
+    &::after
+      transform: scale(0.85)
     &__main
       &-wrapper
-        margin: 0 63px 0 85px
         align-items: center
       &-descr
         width: 460px
@@ -188,10 +193,6 @@
         &-subtitle
           font-size: 23px
           line-height: 34px
-      &-cat
-        width: 426px
-        right: -127px
-        bottom: 22px
       &-wheel
         transform: scale(0.65)
         margin-bottom: -170px
@@ -224,12 +225,9 @@
     &__main
       &-descr
         width: 565px
-      &-cat
-        width: 445px
-        right: -100px
-        bottom: -10px
       &-wheel
         transform: scale(0.85)
+        bottom: -10px
 
 @media screen and (max-width: 1366px) and (min-height: 1000px)
   .bao
@@ -237,6 +235,8 @@
       &-wheel
         transform: scale(0.9)
         margin-bottom: -70px
+      &-cat
+        bottom: -53px
 
 @media screen and (max-width: 1300px) and (min-height: 1024px)
   .bao
@@ -280,10 +280,10 @@
         flex-direction: column
         align-items: center
         margin: 45px auto 0
-      &-cat
-        width: 427px
-        right: -164px
-        bottom: -10px
+      //&-cat
+      //  //width: 427px
+      //  //right: -164px
+      //  //bottom: -10px
       &-descr
         width: auto
         &-logo
@@ -324,6 +324,8 @@
 
 @media screen and (max-width: 1280px) and (min-height: 700px)
   .bao
+    &::after
+      transform: scale(1)
     &__main
       &-descr
         width: 455px
@@ -338,8 +340,7 @@
   .bao
     &__main
       &-cat
-        right: -110px
-        bottom: 46px
+        bottom: -50px
       &-wheel
         margin-bottom: -190px
         &-wrap
@@ -350,6 +351,14 @@
     &__main
       &-descr
         width: auto
+
+@media screen and (max-width: 1300px) and (min-height: 1000px)
+  .bao
+    &__main
+      &-cat
+        transform: scale(1.1)
+        left: -320px
+        bottom: -110px
 
 @media screen and (max-width: 1250px)
   .bao
@@ -373,9 +382,10 @@
         &-wrap
           transform: scale(1)
       &-cat
-        width: 350px
+        //width: 350px
         right: -30px
-        bottom: 61px
+        bottom: -28px
+        //bottom: 61px
       &-descr
         &-logo
           margin-top: 50px
@@ -418,7 +428,7 @@
       &-cat
         width: 427px
         right: -164px
-        bottom: -10px
+        //bottom: -10px
       &-wheel
         margin-bottom: -465px
         bottom: 342px
@@ -435,6 +445,70 @@
         bottom: 430px
         transform: scale(0.9)
 
+@media screen and (max-width: 1200px) and (max-height: 900px)
+  .bao
+    &::after
+      transform: scale(0.9)
+
+@media screen and (max-width: 1024px) and (orientation: landscape)
+  .bao
+    &::after
+      transform: scale(0.85)
+    &__main
+      &-wrapper
+        align-items: center
+      &-descr
+        width: 460px
+        &-logo
+          width: 190px
+          height: 45px
+          margin-top: 85px
+        &-title
+          margin-top: 55px
+          font-size: 70px
+          line-height: 73px
+        &-subtitle
+          font-size: 23px
+          line-height: 34px
+      &-wheel
+        transform: scale(0.75)
+        margin-bottom: -170px
+      &-cat
+        width: 411px
+        right: -71px
+        //bottom: -8px
+        left: -134px
+      &-txt
+        font-size: 40px
+        line-height: 46px
+        top: 300px
+        right: -160px
+        width: 250px
+    &__firstWin, &__secondWin
+      width: 600px
+      height: 415px
+      &-cat
+        width: 297px
+        height: 240px
+        margin-top: -90px
+      &-title
+        font-size: 23px
+        line-height: 27px
+      &-sum
+        font-size: 50px
+        line-height: 67px
+    .btn
+      width: 260px
+      font-size: 20px
+      padding: 19px 0 14px
+
+@media screen and (max-width: 1024px) and (orientation: landscape) and (max-height: 650px)
+  .bao
+    &__main
+      &-cat
+        bottom: 6px
+
+
 @media screen and (max-width: 1024px) and (orientation: portrait)
   .bao
     &__main
@@ -443,7 +517,7 @@
       &-cat
         width: 350px
         right: 0
-        bottom: 14px
+        //bottom: 14px
       &-wheel
         transform: scale(0.8)
         margin-bottom: -108px
@@ -452,6 +526,8 @@
 
 @media screen and (max-width: 1024px) and (min-height: 1024px)
   .bao
+    &::after
+      transform: scale(1.2)
     &__main
       &-wrapper
         max-width: 800px
@@ -459,7 +535,8 @@
       &-cat
         width: 427px
         right: -164px
-        bottom: -10px
+        left: -189px
+        bottom: -85px
       &-wheel
         margin-bottom: -465px
         bottom: 342px
@@ -476,8 +553,16 @@
         bottom: 430px
         transform: scale(0.9)
 
+@media screen and (max-width: 1024px) and (max-height: 810px)
+  .bao
+    &__main
+      &-cat
+        bottom: 22px
+
 @media screen and (max-width: 1000px)
   .bao
+    &::after
+      transform: scale(0.9)
     &__bg
       background: url("../img/tablet-top.jpg") no-repeat 0 0/cover
       width: 100%
@@ -519,9 +604,10 @@
         align-items: center
         margin: 25px auto 0
       &-cat
-        width: 280px
+        width: 402px
+        left: -178px
         right: 23px
-        bottom: 206px
+        bottom: 168px
       &-descr
         width: auto
         &-logo
@@ -558,9 +644,10 @@
       &-wrapper
         margin: 54px auto 0
       &-cat
-        width: 330px
+        //width: 330px
         right: -55px
-        bottom: 150px
+        left: -104px
+        bottom: 86px
       &-descr
         &-title
           font-size: 84px
@@ -582,9 +669,9 @@
   .bao
     &__main
       &-cat
-        width: 380px
+        //width: 380px
         right: -110px
-        bottom: 63px
+        bottom: 4px
       &-wheel
         margin-bottom: -200px
         bottom: 52px
@@ -593,6 +680,18 @@
 
 @media screen and (max-width: 700px)
   .bao
+    &::after
+      z-index: 1
+      transform: scale(0.65)
+    &::before
+      content: ''
+      position: absolute
+      width: 50%
+      height: 150px
+      background: linear-gradient(360deg, #020529 60%, rgba(2, 5, 41, 0) 100%)
+      z-index: 0
+      bottom: 0
+      right: 0
     &__bg
       background: none
       &:after, &:before
@@ -617,10 +716,19 @@
     &__main
       &-wrapper
         margin: 10px auto 0
+        &::after
+          content: ''
+          position: absolute
+          width: 50%
+          height: 150px
+          background: linear-gradient(360deg, #020529 60%, rgba(2, 5, 41, 0) 100%)
+          z-index: 0
+          bottom: 0
+          left: 0
       &-cat
-        width: 317px
-        right: -10px
-        bottom: 160px
+        width: 363px
+        left: -58px
+        bottom: 46px
       &-descr
         &-logo
           margin: auto
@@ -650,6 +758,7 @@
         margin-bottom: -326px
         &-wrap
           transform: scale(0.84)
+          //top: -50px
     &__overlay
       align-items: flex-end
     &__firstWin, &__secondWin
@@ -672,6 +781,7 @@
       &-btn
         margin-top: 41px
     .btn
+      z-index: 50
       width: 225px
       font-size: 18px
       padding: 13px 0 10px
@@ -681,8 +791,8 @@
     &__main
       &-wrapper
         margin: 30px auto 0
-      &-cat
-        bottom: 120px
+      //&-cat
+        //bottom: 120px
       &-descr
         &-title
           margin-top: 12px
@@ -720,9 +830,9 @@
   .bao
     &__main
       &-cat
-        width: 286px
+        //width: 286px
         right: 0
-        bottom: 149px
+        //bottom: 149px
       &-descr
         &-title
           margin-top: 22px
@@ -739,9 +849,9 @@
   .bao
     &__main
       &-cat
-        width: 280px
+        //width: 280px
         right: 38px
-        bottom: 150px
+        //bottom: 150px
       &-wheel
         transform: scale(0.57)
         bottom: 140px
@@ -750,9 +860,9 @@
   .bao
     &__main
       &-cat
-        width: 335px
+        //width: 335px
         right: 38px
-        bottom: 106px
+        //bottom: 106px
       &-wheel
         bottom: 165px
 
@@ -761,13 +871,74 @@
     &__firstWin, &__secondWin
       width: 100%
 
+@media screen and (max-width: 420px)
+  .bao
+    &__main
+      &-cat
+        left: -30px
+
+@media screen and (max-width: 420px) and (min-height: 800px)
+  .bao
+    &__main
+      &-wheel-wrap
+        top: -50px
+
+@media screen and (max-width: 400px)
+  .bao
+    &__main
+      &-cat
+        left: -10px
+
+@media screen and (max-width: 380px)
+  .bao
+    &::before
+      height: 124px
+      background: linear-gradient(360deg, #020529 64%, rgba(2, 5, 41, 0) 100%)
+    &::after
+      transform: scale(0.55)
+    &__main
+      &-wrapper
+        &::after
+          height: 124px
+          background: linear-gradient(360deg, #020529 64%, rgba(2, 5, 41, 0) 100%)
+      &-cat
+        left: 12px
+        transform: scale(1.1)
+
+@media screen and (max-width: 380px) and (max-height: 560px)
+  .bao
+    &__main
+      &-cat
+        left: -56px
+        transform: scale(1.1)
+
+
+@media screen and (max-width: 365px)
+  .bao
+    &__main
+      &-cat
+        left: -29px
+
+@media screen and (max-width: 365px) and (min-height: 730px)
+  .bao
+    &__main
+      &-wheel-wrap
+        top: -50px
+
+@media screen and (max-width: 330px)
+  .bao
+    &__main
+      &-cat
+        left: 1px
+
+
 @media screen and (max-width: 374px) and (min-height: 600px)
   .bao
     &__main
       &-cat
-        width: 310px
+        //width: 310px
         right: 33px
-        bottom: 136px
+        //bottom: 136px
       &-descr
         &-title
           margin-top: 18px
@@ -781,6 +952,18 @@
 
 @media screen and (max-width: 940px) and (min-height: 270px) and (max-height: 750px) and (orientation: landscape)
   .bao
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 70px
+      background: linear-gradient(360deg, #020529 60%, rgba(2, 5, 41, 0) 100%)
+      z-index: 0
+      bottom: 0
+      right: 0
+
+    &::after
+      transform: scale(0.5)
     &__bg
       background: none
       &:after, &:before
@@ -805,10 +988,12 @@
     &__main
       &-wrapper
         margin: 10px auto 0
+        &::after
+          content: none
       &-cat
-        width: 317px
+        width: 452px
         right: -10px
-        bottom: 160px
+        bottom: 110px
       &-descr
         &-logo
           margin: auto
@@ -869,7 +1054,7 @@
     &__main
       &-cat
         right: 27px
-        bottom: 200px
+        //bottom: 200px
       &-wheel
         transform: scale(0.33)
         position: absolute
@@ -881,9 +1066,9 @@
       &-wrapper
         margin: 20px auto 0
       &-cat
-        width: 260px
+        //width: 260px
         right: 94px
-        bottom: 200px
+        //bottom: 200px
       &-wheel
         transform: scale(0.39)
         bottom: 174px
