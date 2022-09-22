@@ -604,7 +604,8 @@
         width: 427px
         right: -164px
         left: -189px
-        bottom: -85px
+        bottom: -97px
+        transform: scale(1.2)
       &-wheel
         margin-bottom: -465px
         bottom: 342px
@@ -722,7 +723,7 @@
       &-cat
         //width: 330px
         right: -55px
-        left: -104px
+        left: -125px
         bottom: 86px
       &-descr
         &-title
@@ -745,9 +746,10 @@
   .bao
     &__main
       &-cat
+        transform: scale(1.2)
         //width: 380px
         right: -110px
-        bottom: 4px
+        bottom: -6px
       &-wheel
         margin-bottom: -200px
         bottom: 52px
@@ -905,10 +907,14 @@
 
 @media screen and (max-width: 700px) and (min-height: 550px)
   .bao
+
     &__main
       &-wheel
         transform: scale(0.42)
         bottom: 105px
+      &-descr
+        height: 100%
+        z-index: 50
 
 @media screen and (max-width: 700px) and (min-height: 600px)
   .bao
@@ -973,17 +979,36 @@
       &-cat
         left: -10px
 
-@media screen and (max-width: 380px)
+@media screen and (max-width: 395px) and (max-height: 695px)
   .bao
     &::before
-      height: 124px
+      height: 117px
       background: linear-gradient(360deg, #020529 64%, rgba(2, 5, 41, 0) 100%)
     &::after
       transform: scale(0.55)
     &__main
       &-wrapper
         &::after
-          height: 124px
+          height: 117px
+          background: linear-gradient(360deg, #020529 64%, rgba(2, 5, 41, 0) 100%)
+      &-cat
+        left: 12px
+        transform: scale(1.1)
+      &-descr
+        height: 100%
+        z-index: 50
+
+@media screen and (max-width: 380px)
+  .bao
+    &::before
+      height: 117px
+      background: linear-gradient(360deg, #020529 64%, rgba(2, 5, 41, 0) 100%)
+    &::after
+      transform: scale(0.55)
+    &__main
+      &-wrapper
+        &::after
+          height: 117px
           background: linear-gradient(360deg, #020529 64%, rgba(2, 5, 41, 0) 100%)
       &-cat
         left: 12px
