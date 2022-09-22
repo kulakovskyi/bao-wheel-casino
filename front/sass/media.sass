@@ -23,6 +23,7 @@
         width: 500px
       &-descr
         width: 705px
+        left: 154px
         &-logo
           width: 346px
           height: 79px
@@ -62,6 +63,8 @@
       &-wrapper
         margin: 0 225px 0 154px
         max-width: 2019px
+      &-descr
+        left: 154px
 
 
 @media screen and (max-width: 1920px) and (max-height: 1050px)
@@ -77,6 +80,8 @@
     &__main
       &-wrapper
         margin: 0 123px 0 103px
+      &-descr
+        left: 103px
 
 @media screen and (max-width: 1680px)
   .bao
@@ -86,15 +91,15 @@
       &-wrapper
         margin: 0 112px 0 103px
       &-cat
-        transform: scale(1)
-        left: -225px
+        transform: scale(1.19)
+        left: -318px
       &-wheel
         transform: scale(0.7)
         margin-bottom: -143px
       &-descr
         width: 505px
+        left: 103px
         &-logo
-          margin-top: 115px
           width: 239px
           height: 50px
         &-title
@@ -114,7 +119,7 @@
       transform: scale(1.1)
     &__main
       &-wrapper
-        margin: 0 46px 0 103px
+        margin: 0 84px 0 103px
       &-wheel
         transform: scale(0.9)
         margin-bottom: -65px
@@ -134,13 +139,17 @@
     &__main
       &-wrapper
         margin: 0 30px 0 103px
+      &-descr
+        left: 103px
 
 @media screen and (max-width: 1540px) and (max-height: 800px)
   .bao
     &__main
       &-wheel
-        transform: scale(0.77)
+        transform: scale(0.83)
         margin-bottom: -135px
+      &-wrapper
+        margin: 0 3px 0 86px
       &-cat
         bottom: -68px
     &__firstWin, &__secondWin
@@ -154,7 +163,16 @@
   .bao
     &__main
       &-wrapper
-        margin: 0 15px 0 86px
+        margin: 0 3px 0 86px
+      &-descr
+        left: 86px
+
+
+@media screen and (max-width: 1440px) and (max-height: 800px)
+  .bao
+    &__main
+      &-cat
+        left: -369px
 
 
 @media screen and (max-width: 1440px) and (min-height: 800px)
@@ -162,6 +180,8 @@
     &__main
       &-wrapper
         margin: 0 15px 0 86px
+      &-descr
+        left: 86px
 
 @media screen and (max-width: 1366px) and (max-height: 800px)
   .bao
@@ -185,7 +205,6 @@
         &-logo
           width: 190px
           height: 45px
-          margin-top: 85px
         &-title
           margin-top: 55px
           font-size: 70px
@@ -195,7 +214,7 @@
           line-height: 34px
       &-wheel
         transform: scale(0.65)
-        margin-bottom: -170px
+        margin-bottom: -177px
       &-txt
         font-size: 40px
         line-height: 46px
@@ -220,7 +239,7 @@
       font-size: 20px
       padding: 19px 0 14px
 
-@media screen and (max-width: 1366px) and (min-height: 810px)
+@media screen and (max-width: 1369px) and (min-height: 810px)
   .bao
     &__main
       &-descr
@@ -229,7 +248,7 @@
         transform: scale(0.85)
         bottom: -10px
 
-@media screen and (max-width: 1366px) and (min-height: 1000px)
+@media screen and (max-width: 1369px) and (min-height: 1000px)
   .bao
     &__main
       &-wheel
@@ -237,6 +256,7 @@
         margin-bottom: -70px
       &-cat
         bottom: -53px
+        left: -287px
 
 @media screen and (max-width: 1300px) and (min-height: 1024px)
   .bao
@@ -279,11 +299,17 @@
         max-width: 1000px
         flex-direction: column
         align-items: center
+        justify-content: space-between
+        position: relative
         margin: 45px auto 0
-      //&-cat
-      //  //width: 427px
-      //  //right: -164px
-      //  //bottom: -10px
+      &-descr
+        position: static
+        transform: translateY(0)
+        &-logo
+          margin-top: 60px
+        &-subtitle
+          br
+            display: none
       &-descr
         width: auto
         &-logo
@@ -322,11 +348,28 @@
         bottom: 430px
         transform: scale(0.9)
 
+@media screen and (max-width: 1280px)
+  .bao
+    &__main
+      &-descr
+        left: 50px
+
+@media screen and (max-width: 1280px) and (min-height: 560px)
+  .bao
+    &__main
+      &-cat
+        left: -329px
+
+
+
+
 @media screen and (max-width: 1280px) and (min-height: 700px)
   .bao
     &::after
       transform: scale(1)
     &__main
+      &-cat
+        left: -329px
       &-descr
         width: 455px
         &-title
@@ -360,11 +403,24 @@
         left: -320px
         bottom: -110px
 
-@media screen and (max-width: 1250px)
+@media screen and (max-width: 1270px)
   .bao
     &__main
       &-wrapper
         margin: 0 63px 0 158px
+        justify-content: space-between
+        position: relative
+      &-cat
+        left: -291px
+        bottom: -87px
+      &-descr
+        position: static
+        transform: translateY(0)
+        &-logo
+          margin-top: 60px
+        &-subtitle
+          br
+            display: none
       &-wheel
         &-bottom
           width: 400px
@@ -384,11 +440,11 @@
       &-cat
         //width: 350px
         right: -30px
-        bottom: -28px
-        //bottom: 61px
+        bottom: -87px
       &-descr
+        height: 100%
+        z-index: 50
         &-logo
-          margin-top: 50px
           width: 191px
           height: 40px
         &-title
@@ -404,6 +460,8 @@
 @media screen and (max-width: 1250px) and (min-height: 750px)
   .bao
     &__main
+      &-cat
+        bottom: -65px
       &-descr
         &-logo
           margin-top: 0
@@ -412,6 +470,7 @@
       &-cat
         width: 378px
         height: 297px
+
 
 @media screen and (max-width: 1250px) and (min-height: 1024px)
   .bao
@@ -450,6 +509,14 @@
     &::after
       transform: scale(0.9)
 
+@media screen and (max-width: 1125px)
+  .bao
+    &__main
+      &-cat
+        left: -243px
+        transform: scale(1)
+        bottom: -47px
+
 @media screen and (max-width: 1024px) and (orientation: landscape)
   .bao
     &::after
@@ -462,7 +529,6 @@
         &-logo
           width: 190px
           height: 45px
-          margin-top: 85px
         &-title
           margin-top: 55px
           font-size: 70px
@@ -507,6 +573,8 @@
     &__main
       &-cat
         bottom: 6px
+
+
 
 
 @media screen and (max-width: 1024px) and (orientation: portrait)
@@ -558,6 +626,14 @@
     &__main
       &-cat
         bottom: 22px
+
+@media screen and (max-width: 1024px) and (orientation: landscape) and (max-height: 768px)
+  .bao
+    &__main
+      &-cat
+        transform: scale(1)
+        bottom: -20px
+        left: -108px
 
 @media screen and (max-width: 1000px)
   .bao
@@ -678,6 +754,13 @@
         &-wrap
           transform: scale(1)
 
+@media screen and (max-width: 720px)
+  .bao
+    &__main
+      &-cat
+        transform: scale(1)
+
+
 @media screen and (max-width: 700px)
   .bao
     &::after
@@ -729,6 +812,7 @@
         width: 363px
         left: -58px
         bottom: 46px
+        transform: scale(1)
       &-descr
         &-logo
           margin: auto
@@ -904,6 +988,10 @@
       &-cat
         left: 12px
         transform: scale(1.1)
+      &-descr
+        height: 100%
+        z-index: 50
+
 
 @media screen and (max-width: 380px) and (max-height: 560px)
   .bao
@@ -911,6 +999,17 @@
       &-cat
         left: -56px
         transform: scale(1.1)
+      &-descr
+        height: 100%
+        z-index: 50
+
+@media screen and (max-width: 380px) and (max-height: 675px)
+  .bao
+    &__main
+      &-cat
+        left: -56px
+        transform: scale(1.1)
+
 
 
 @media screen and (max-width: 365px)
@@ -940,6 +1039,9 @@
         right: 33px
         //bottom: 136px
       &-descr
+        height: 100%
+        z-index: 50
+
         &-title
           margin-top: 18px
           font-size: 35px
@@ -963,7 +1065,7 @@
       right: 0
 
     &::after
-      transform: scale(0.5)
+      transform: scale(0.45)
     &__bg
       background: none
       &:after, &:before
@@ -994,7 +1096,10 @@
         width: 452px
         right: -10px
         bottom: 110px
+        transform: scale(1)
       &-descr
+        height: 100%
+        z-index: 50
         &-logo
           margin: auto
           width: 83px
@@ -1017,7 +1122,7 @@
           margin-top: 5px
           flex-direction: column
       &-wheel
-        transform: scale(0.24)
+        transform: scale(0.28)
         position: absolute
         bottom: 134px
         margin-bottom: -465px
@@ -1085,3 +1190,9 @@
           line-height: 13px
         &-btn
           bottom: 24px
+
+@media screen and (max-width: 670px) and (orientation: landscape) and (max-height: 380px)
+  .bao
+    &__main
+      &-cat
+        left: -191px
